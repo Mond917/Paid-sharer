@@ -10,10 +10,10 @@ from rich.console import Console
 # Dito lang pede mo palitan
 # dont change the key name (e.g owner,facebook,etc.), value lang palitan mo
 info = {
-  "owner": 'Astro Ksks',
-  "facebook": 'https://www.facebook.com/christhenoob13',
+  "owner": 'karashiga dev',
+  "facebook": 'https://www.facebook.com/jaxonvaughnrpw',
   "tool": 'Spamshare',
-  "version": '1',
+  "version": '1.9',
 }
 
 # simuka dito wag mo na ibahin baka masira mo pa code
