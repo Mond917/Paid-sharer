@@ -34,6 +34,9 @@ def banner():
   FACEBOOK: {info['facebook']}
   TOOL: {info['tool']}
   VERSION: {info['version']}
+  STATUS: {info['active']}
+  NOTE: {info['note']}
+  
 _________________________________________________________
   """
   print(bannir)
