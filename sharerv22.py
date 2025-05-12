@@ -14,6 +14,8 @@ info = {
   "facebook": 'https://www.facebook.com/jaxonvaughnrpw',
   "tool": 'Spamshare',
   "version": '1.9',
+  "active": 'ACTIVE',
+  "note": 'This tool is for paid user only noy free',
 }
 
 # simuka dito wag mo na ibahin baka masira mo pa code
@@ -32,7 +34,7 @@ def banner():
   FACEBOOK: {info['facebook']}
   TOOL: {info['tool']}
   VERSION: {info['version']}
-________________________________________________________
+_________________________________________________________
   """
   print(bannir)
 
