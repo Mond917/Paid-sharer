@@ -119,12 +119,6 @@ def divide_array(arr):
   part3 = arr[2 * part_size:]
   return part1, part2, part3
 
-nigro = divide_array(sharerZ)
-for _di in nigro:
-  if len(_di) != 0:
-    threading.Thread(target=worker, args=(_di,)).start()
-threading.Thread(target=worker, args=(counterZ,)).start()
-
 async def main(num_tasks):
   async with aiohttp.ClientSession() as session:
     share = Share()
